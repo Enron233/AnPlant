@@ -1,0 +1,9 @@
+name: AnPlant
+version: '${version}'
+main: com.xiaoanovo.anplant.AnPlant
+api-version: 1.15
+authors: [ Xiao_an ]
+description: A MineCraft Game Plugin.
+commands:
+  anplant:
+    description: "获取植树小游戏插件相关指令"
