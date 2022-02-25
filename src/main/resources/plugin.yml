@@ -1,5 +1,5 @@
 name: AnPlant
-version: '${version}'
+version: '1.0.0'
 main: com.xiaoanovo.anplant.AnPlant
 api-version: 1.15
 authors: [ Xiao_an ]

@@ -6,6 +6,9 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.io.IOException;
+
+
 public class Acommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -14,7 +17,11 @@ public class Acommand implements CommandExecutor {
         }
         Player p = (Player) sender;
         if (p.hasPermission("anplant.admin")) {
-            AdminCommand.adminCommand(p, args);
+            try {
+                AdminCommand.adminCommand(p, args);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return true;
     }
