@@ -34,6 +34,7 @@ public class AdminCommand {
                 }else {
                     player.sendMessage(getChat_prefix() +"§c参数错误，检查是不是输错了？");
                 }
+                return;
             }
             if (args[0].equalsIgnoreCase("remove")){
                 if (args.length == 2) {
@@ -48,7 +49,9 @@ public class AdminCommand {
             }
             if (args[0].equalsIgnoreCase("set")) {
                 GameSet.gameSet(player, args);
+                return;
             }
+            player.sendMessage(getChat_prefix() +"§c参数错误，检查是不是输错了？");
         }
 
     }

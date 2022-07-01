@@ -2,7 +2,6 @@ package com.xiaoanovo.anplant.Command;
 
 import org.bukkit.entity.Player;
 
-import static com.xiaoanovo.anplant.AnPlant.getChat_prefix;
 
 public class GameSet {
     public static void gameSet(Player player, String[] args) {
